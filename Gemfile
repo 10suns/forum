@@ -36,6 +36,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 gem 'cancancan', '~> 1.10'
 
+# haml
+gem "haml-rails", "~> 0.9"
+gem 'jquery-tmpl-rails'
+
 # Testing
 group :development, :test do
   gem 'capybara', '~> 2.1'
