@@ -40,6 +40,7 @@ gem 'cancancan', '~> 1.10'
 gem "haml-rails", "~> 0.9"
 gem 'jquery-tmpl-rails'
 
+gem 'bootstrap-sass', '~> 3.3.5'
 # Testing
 group :development, :test do
   gem 'capybara', '~> 2.1'
