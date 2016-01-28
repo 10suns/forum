@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users, class_name: "User", path: "", path_names: {
-      sign_in: :login,
-      sign_out: :logout
-  }
+  devise_for :students
+  devise_for :teachers
+  devise_for :admins
   root to: 'dashboard#index'
   get 'dashboard/index' => 'dashboard#index'
 end

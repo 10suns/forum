@@ -39,7 +39,7 @@
           %li
             %a{:href => "#"}
           %li
-            = link_to destroy_user_session_path, method: :delete do
+            = link_to send("destroy_#{current_user.class.name.downcase}_session_path"), method: :delete do
               %i.glyphicon.glyphicon-lock
               = t 'helpers.links.logout', default: 'Logout'
       / /.navbar-collapse
