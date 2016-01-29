@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   devise_for :admins
   root to: 'dashboard#index'
   get 'dashboard/index' => 'dashboard#index'
+
+  resources :subjects
+  resources :courses
 end
